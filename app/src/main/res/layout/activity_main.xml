@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="45dp"
+        app:layout_constraintBottom_toTopOf="@id/ditTextSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/ditTextSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Surname"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextMarks"/>
+
+    <EditText
+        android:id="@+id/editTextMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Marks"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="162dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert "
+        android:onClick="insertData"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="195dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button2"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all data"
+        android:onClick="viewAllData"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/spinnerId"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="ID:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerId"
+        app:layout_constraintBottom_toTopOf="@id/editTextFName2"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get data"
+        android:onClick="viewDataFromId"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="341dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextFName2"/>
+
+    <EditText
+        android:id="@+id/editTextFName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="416dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextSurname2"/>
+
+    <EditText
+        android:id="@+id/editTextSurname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Surname"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="483dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextMarks2"/>
+
+    <EditText
+        android:id="@+id/editTextMarks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Marks"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="540dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button4"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="updateData"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="647dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:onClick="deleteData"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="643dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinnerId"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:text="Select ID"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="429dp"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/button3"
+        app:layout_constraintBottom_toTopOf="@id/button3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
